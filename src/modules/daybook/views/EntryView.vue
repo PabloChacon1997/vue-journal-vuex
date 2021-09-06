@@ -96,7 +96,7 @@ export default {
       this.entry = entry
     },
     async saveEntry() {
-      new Swal({
+      Swal.fire({
         title: "Espere por favor",
         allowOutsideClick: false,
       })
@@ -123,7 +123,7 @@ export default {
         confirmButtonText: "Si, estoy seguro"
       })
       if(isConfirmed) {
-        new Swal({
+        Swal.fire({
           title: "Espere por favor",
           backdrop: true,
           allowOutsideClick: true,
